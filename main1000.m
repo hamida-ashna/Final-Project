@@ -64,10 +64,41 @@ energy      = graycoprops(glcm,{'energy'});
 homogeneity = graycoprops(glcm,{'homogeneity'});
 
 % Shape Feature
-fet2 = hu_moments(bw1);
-fet3 = hu_moments(bw2);
-fet4 = hu_moments(bw3);
-fet5 = hu_moments(bw4);
+Hu1       = hu_moments(bw1);
+Strip_M1  = Hu1(1);
+Strip_M2  = Hu1(2);
+Strip_M3  = Hu1(3);
+Strip_M4  = Hu1(4);
+Strip_M5  = Hu1(5);
+Strip_M6  = Hu1(6);
+Strip_M7  = Hu1(7);
+
+Hu2       = hu_moments(bw2);
+Bottom_M1 = Hu2(1);
+Bottom_M2 = Hu2(2);
+Bottom_M3 = Hu2(3);
+Bottom_M4 = Hu2(4);
+Bottom_M5 = Hu2(5);
+Bottom_M6 = Hu2(6);
+Bottom_M7 = Hu2(7);
+
+Hu3       = hu_moments(bw3);
+Upper_M1  = Hu3(1);
+Upper_M2  = Hu3(2);
+Upper_M3  = Hu3(3);
+Upper_M4  = Hu3(4);
+Upper_M5  = Hu3(5);
+Upper_M6  = Hu3(6);
+Upper_M7  = Hu3(7);
+
+Hu4       = hu_moments(bw4);
+Logo_M1   = Hu4(1);
+Logo_M2   = Hu4(2);
+Logo_M3   = Hu4(3);
+Logo_M4   = Hu4(4);
+Logo_M5   = Hu4(5);
+Logo_M6   = Hu4(6);
+Logo_M7   = Hu4(7);
+
 
 imshow(bw4);
-
